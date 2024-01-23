@@ -1,0 +1,23 @@
+.title-info {
+  padding-left: 15px !important;
+  padding-top: 5px;
+  font-size: 28px;
+}
+
+.mat-card {
+  @media (max-width: 720px) {
+    min-height: 150px;
+  }
+}
+
+.mat-mdc-card-content {
+  display: block;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mat-mdc-card {
+  position: relative;
+  background-color: #c8cfcfa3;
+}
