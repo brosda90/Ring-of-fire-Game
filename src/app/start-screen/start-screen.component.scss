@@ -1,21 +1,90 @@
 .start-screen {
-  background-color: #404040;
+  background-color: #aea79c;
   width: 100vw;
   height: 100vh;
-  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 960px) {
-    overflow: hidden;
+  background-image: url("/assets/img/startbox.png");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  
+  
+ 
+}
+
+.button-box{
+  display: flex;
+  flex-direction:row;
+  gap: 16px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+.btn{
+  font-family: "Overpass";
+    font-size: 28px;
+  font-weight: 700;
+  width: 190px;
+  height: 62px;
+  border-radius: 17px;
+  
+
+  transition: transform 0.5s ease;
+  background-color: #f7fff1;
+  color: black;
+  border: 1px solid #017582;
+
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease 0.5s;
   }
 
-  img {
-    justify-content: center; /* horizontal zentrieren */
-    align-items: center; /* vertikal zentrieren */
-    height: 100vh; /* Höhe des Viewports */
+  &:active {
+    background-color: #c02904;
+  }
+
+}
+
+.rules{
+  margin-right: 40px;
+}
+
+
+
+.rules-box{
+  font-family: "Overpass";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid #017582;
+  text-align: start;
+  position: absolute;
+  top: 30%;
+  width: 400px;
+  background-color: white;
+  z-index: 100;
+
+
+
+  h2{
+    font-size: 28px;
+  }
+
+  p{
+    font-size: 24px;
+    line-height: normal;
   }
 }
+
+
 
 .start-label-box {
   position: absolute;
@@ -38,4 +107,91 @@
       border-radius: 10px;
     }
   }
+}
+
+@media(max-width:1440px){
+  .btn{
+    font-size: 24px;
+    width: 146px;
+    height: 50px;
+  }
+}
+
+@media(max-width:1070px){
+  .button-box{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+  }
+
+  .btn{
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+}
+
+@media (max-width:720px){
+  .button-box{
+    justify-content: center;
+    position: unset;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+  }
+  .start-screen{
+    background-image: url("/assets/img/startbox-cropped.png");
+  }
+}
+
+@media (max-width:600px){
+  .start-screen{
+    background: 
+    url("/assets/img/startbox-cropped.png"),
+      linear-gradient(0deg, rgba(246,255,240,1) 0%, rgba(174,167,156,1) 79%);
+   background-size: 110%, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .button-box{
+    justify-content: center;
+    position: absolute;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .rules-box {
+    padding: 10px;
+    top: 13%;
+    width: 340px;
+  
+    p{
+      font-size: 18px;
+    }
+    
+}
+}
+
+
+@media(max-width:378px){
+  .btn{
+    margin-top: 44px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 19px;
+  width: 121px;
+  height: 43px;
+}
+
+.rules-box{
+  padding: 10px;
+  top: 21%;
+  width: 250px;
+}
+
+
 }

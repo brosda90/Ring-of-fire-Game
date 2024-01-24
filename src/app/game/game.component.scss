@@ -2,11 +2,15 @@
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  background-image: url("/assets/img/board.jpg");
+  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-repeat: round;
+  background-image: url(/assets/img/background.png);
+  background-size: cover;
+  background-position: center;
+  
+ 
 }
 
 .card-stack {
@@ -14,9 +18,11 @@
 
   img {
     position: absolute;
-    width: 120px;
+    width: 220px;
   }
 }
+
+
 
 .top-card {
   cursor: pointer;
@@ -28,14 +34,17 @@
   }
 }
 
+
 .played-card {
   right: 25px;
-  transform: scale(1.3) translateX(140px) translateY(-180px) rotate(10deg);
+  height: 226px;
+  width: 136px ;
+  transform: scale(1.3) translateX(148px) translateY(-196px) rotate(13deg);
 }
 
 .pick-card {
   animation: pick-card-animation 1s ease-in-out;
-  transform: scale(1.3) translateX(140px) translateY(-180px) rotate(10deg);
+  transform: scale(1.3) translateX(148px) translateY(-196px) rotate(13deg);
 
   @keyframes pick-card-animation {
     0% {
@@ -67,17 +76,19 @@
   bottom: 32px;
 }
 
+.bigger{
+  width: 100px;
+  height: 100px;
+
+}
+
 .pin-bottom {
   position: absolute;
   bottom: 40px;
   left: 200px;
   right: 200px;
 
-  @media (max-width: 960px) {
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+ 
 }
 
 .scroll-container {
@@ -97,9 +108,9 @@
 
 @media (max-width: 960px) {
   .played-card {
-    right: 10px;
-    transform: scale(1.2) translateX(90px) translateY(-135px) rotate(10deg);
-  }
+  
+    transform: scale(1.2) translateX(168px) translateY(-208px) rotate(13deg);
+}
 
   .top-card {
     cursor: pointer;
@@ -113,23 +124,23 @@
 
   .pick-card {
     animation: pick-card-animation 1s ease-in-out;
-    transform: scale(1.2) translateX(90px) translateY(-135px) rotate(10deg);
-
+    transform: scale(1.2) translateX(168px) translateY(-208px) rotate(13deg);
+  
     @keyframes pick-card-animation {
       0% {
         transform: scale(1);
       }
-
+  
       40% {
-        transform: scale(1.2);
+        transform: scale(1.7);
       }
-
+  
       60% {
-        transform: scale(1.2);
+        transform: scale(1.7);
       }
-
+  
       100% {
-        transform: scale(1.2) translateX(90px) translateY(-135px) rotate(10deg);
+        transform: scale(1.3) translateX(140px) translateY(-180px) rotate(10deg);
       }
     }
   }
@@ -142,9 +153,89 @@
     }
   }
 
-  .button-add[_ngcontent-ng-c1664163073] {
+  .button-add {
     position: absolute;
     right: 10px;
-    bottom: 118px;
+    bottom: 40px;
+  }
+
+  .pin-bottom{
+    left: 40px;
+    right: 138px;
+}
+}
+
+@media(max-width:720px){
+  .field{
+    background-image: url(/assets/img/backgroun_mobile.png);
+  }
+}
+
+@media (max-width:500px){
+
+  .button-add{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+
+  .bigger{
+    width: 55px;
+    height: 55px;
+}
+.pin-bottom {
+  left: 16px;
+  right: 16px;
+  bottom: 82px;
+  text-align: center;
+  background-color: rgb(200 207 207 / 85%) !important;
+}
+
+
+
+.played-card {
+  right: 25px;
+  height: 196px;
+  width: 127px !important;
+  transform: scale(1.3) translateX(100px) translateY(-132px) rotate(13deg);
+}
+
+
+
+.mat-mdc-card{
+  position: relative;
+  
+}
+
+.mat-mdc-card-content{
+  padding: 6px;
+  font-size: 16px;
+}
+
+.title-info{
+  font-size: 28px;
+}
+
+.card-stack{ 
+  margin-left: 40px;
+img{
+  position: absolute;
+  width: 148px ;
+}
+}
+
+
+
+
+
+}
+
+@media(max-width:1440px){
+  .card-stack {
+  
+  img {
+    position: absolute;
+    width: 165px;
+}
   }
 }

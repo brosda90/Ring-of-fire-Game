@@ -20,13 +20,13 @@
     <img
       [ngStyle]="{ 'right.px': i * 9 }"
       *ngFor="let c of [1, 2, 3]; let i = index"
-      src="/assets/img/card_cover.png"
+      src="/assets/img/card_backcover.png"
     />
     <img
       (click)="takeCard()"
       class="top-card"
       style="right: 25px"
-      src="/assets/img/card_cover.png"
+      src="/assets/img/card_backcover.png"
     />
 
     <!-- Stack for played cards-->
@@ -50,6 +50,6 @@
 
 <app-game-info [card]="currentCard" class="pin-bottom"></app-game-info>
 
-<button mat-fab color="primary" class="button-add" (click)="openDialog()">
+<button mat-fab color="primary" class="button-add bigger" (click)="openDialog()">
   <mat-icon>person_add</mat-icon>
 </button>

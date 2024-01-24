@@ -1,9 +1,18 @@
 <div class="start-screen">
-    <img src="assets/img/startbox.png">
+    
 
     <div class="start-label-box">
-        
-    <img (click)="newGame()" src="assets/img/startlabel.png">
-</div>
+       
+    </div>
 
+    <!-- Neues Div für die Regeln -->
+    <div *ngIf="showRules" class="rules-box">
+        <h2>Solve or Drink</h2>
+        <p>Ziel des Spiels "Solve or Drink" ist es, verschiedene Herausforderungen zu meistern, ohne einen Fehler zu machen. Wenn ein Spieler eine Herausforderung nicht besteht, muss er einen Kurzen trinken.</p>
+        <button class="btn" (click)="closeRules()">Schließen</button>
+    </div>
+    <div class="button-box">
+    <button (click)="newGame()"  class="start-game btn">Start Game</button>
+    <button class="rules btn" (click)="rules()">Regeln</button>
+</div>
 </div>

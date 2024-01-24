@@ -3,12 +3,12 @@
     "ring-of-fire-b94b7": {
       "hosting": {
         "ringoffire": [
-          "ring-of-fire-b94b7"
+          "ring-of-fire-38a66"
         ]
       }
     }
   },
   "projects": {
-    "default": "ring-of-fire-b94b7"
+    "default": "ring-of-fire-38a66"
   }
 }

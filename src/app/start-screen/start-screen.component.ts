@@ -17,7 +17,8 @@ import {
   styleUrl: './start-screen.component.scss',
 })
 export class StartScreenComponent implements OnInit {
-  private game: Game; // Deklarieren Sie die game-Variable
+  private game: Game;
+  public showRules = false;
 
   constructor(private router: Router, private firestore: Firestore) {
     this.game = new Game(); // Initialisieren Sie das Game-Objekt
@@ -34,5 +35,13 @@ export class StartScreenComponent implements OnInit {
       .catch((error) => {
         console.error('Error adding game to Firestore: ', error);
       });
+  }
+
+  rules() {
+    this.showRules = true; // Setzen Sie showRules auf true, wenn auf "Regeln" geklickt wird
+  }
+
+  closeRules() {
+    this.showRules = false; // Setzen Sie showRules auf false, wenn auf "Schließen" geklickt wird
   }
 }

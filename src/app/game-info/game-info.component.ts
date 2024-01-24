@@ -9,19 +9,19 @@ export class GameInfoComponent implements OnInit, OnChanges {
 
 
   cardAction = [
-    { title: 'Wasserfall', description: 'Alle müssen gleichzeitig anfangen zu trinken. Sobald Spieler 1 aufhört zu trinken, darf Spieler 2 aufhören. Spieler 3 darf aufhören, sobald Spieler 2 aufgehört hat, und so weiter.' },
-    { title: 'Du', description: 'Du entscheidest, wer trinkt' },
-    { title: 'Ich', description: 'Glückwunsch! Trinke einen Shot!' },
-    { title: 'Kategorie', description: 'Denke dir eine Kategorie aus (z.B. Farben). Jeder Spieler muss einen Gegenstand aus der Kategorie nennen.' },
-    { title: 'Bust a jive', description: 'Spieler 1 macht eine Tanzbewegung. Spieler 2 wiederholt die Tanzbewegung und fügt eine zweite hinzu.' },
-    { title: 'Mädels', description: 'Jeder zweite trinkt' },
-    { title: 'Himmel', description: 'Hebt die Hände hoch! Der letzte Spieler trinkt!' },
-    { title: 'Kumpel', description: 'Suche dir einen Kumpel aus. Dein Kumpel muss immer trinken, wenn du trinkst und umgekehrt.' },
-    { title: 'Daumenmeister', description: 'Spieler 3 trinkt' },
-    { title: 'Männer', description: 'Alle Männer trinken.' },
-    { title: 'Quizmaster', description: 'Alle Frauen trinken.' },
-    { title: 'Ich habe noch nie...', description: 'Sage etwas, das du nie getan hast. Jeder, der es getan hat, muss trinken.' },
-    { title: 'Regel', description: 'Stelle eine Regel auf. Jeder muss trinken, wenn er die Regel bricht.' },
+    { title: 'Alphabet-Rückwärts', description: 'Sage das Alphabet rückwärts auf, ohne einen Fehler zu machen.' },
+    { title: 'Unberührter Boden', description: 'Bleibe für eine Minute auf einem Bein stehen, ohne das Gleichgewicht zu verlieren.' },
+    { title: 'Gedächtniskünstler', description: 'Zähle rückwärts von 100 ab, aber überspringe jede Zahl, die durch 3 teilbar ist' },
+    { title: 'Reim-Duell', description: 'Finde innerhalb von 20 Sekunden ein Wort, das sich auf "Orange" reimt.' },
+    { title: 'Unsichtbare Zeichnung', description: 'Zeichne in der Luft einen Kreis und eine gerade Linie gleichzeitig, jeweils mit einer Hand.' },
+    { title: 'Statuen-Spiel', description: ' Bleibe komplett bewegungslos, während die anderen versuchen, dich zum Lachen zu bringen, für 30 Sekunden.' },
+    { title: 'Im Kopf Rechnen', description: ' Multipliziere zwei zufällig gewählte zweistellige Zahlen im Kopf.' },
+    { title: 'Geschichtenerzähler', description: 'Beginne eine Geschichte mit einem Satz, der nächste in der Runde muss fortfahren.' },
+    { title: 'Liedgut', description: 'Summe ein bekanntes Lied, und die anderen müssen es erraten.' },
+    { title: 'Sprachakrobat', description: 'Wähle einen Satz und sage ihn in drei verschiedenen Sprachen.' },
+    { title: 'Geistige Flexibilität', description: 'Nenne innerhalb von 15 Sekunden fünf Hauptstädte von Ländern, die nicht auf "n" enden.' },
+    { title: 'Unsichtbare Künstler', description: 'Male mit deinem Finger in die Luft und die anderen müssen das Gemälde erraten.' },
+    { title: 'Der Blick', description: 'Starre jemanden 30 Sekunden lang an, ohne zu blinzeln oder zu lachen. Wer zuerst nachgibt oder lacht, hat verloren.' },
   ];
   
 
